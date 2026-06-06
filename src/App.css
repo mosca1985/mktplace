@@ -1,0 +1,8 @@
+/* App.css — limpeza: removendo estilos do template Vite que poluíam o layout */
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}

@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
+    --primary: 24 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 8%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 44%;
+    --accent: 27 100% 84%;
+    --accent-foreground: 0 0% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 24 100% 50%;
+    --radius: 0.75rem;
+    --shadow-card: 0 2px 20px -4px hsl(0 0% 0% / 0.08);
+    --shadow-card-hover: 0 8px 40px -8px hsl(0 0% 0% / 0.14);
+    --shadow-glow: 0 0 48px hsl(24 100% 50% / 0.18);
+  }
+}
+
+@layer base {
+  * { @apply border-border; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
+    font-weight: 800;
+  }
+}
+
+@layer components {
+  .section-container { @apply max-w-6xl mx-auto px-5 sm:px-8 lg:px-12; }
+  .section-padding   { @apply py-16 sm:py-24; }
+
+  .heading-xl {
+    @apply text-[2rem] sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.12] tracking-tight;
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+  .heading-lg {
+    @apply text-[1.75rem] sm:text-4xl lg:text-5xl font-extrabold leading-[1.15] tracking-tight;
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+  .text-body { @apply text-base sm:text-lg leading-relaxed text-muted-foreground; }
+
+  .tag-label {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2.5 h-14 px-8 rounded-xl bg-primary text-white font-bold text-base transition-all duration-200;
+    box-shadow: 0 4px 16px hsl(24 100% 50% / 0.3);
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px hsl(24 100% 50% / 0.4); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2.5 h-14 px-8 rounded-xl border-2 border-white/30 text-white font-bold text-base transition-all duration-200 bg-transparent;
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+  .btn-outline:hover { @apply border-white/50 bg-white/10; transform: translateY(-2px); }
+
+  .card-hover { @apply transition-all duration-200 hover:shadow-[var(--shadow-card-hover)] hover:-translate-y-1; }
+
+  .fade-section {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-section.visible { opacity: 1; transform: translateY(0); }
+}
+
+/* Marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 50s linear infinite; }
+.animate-marquee:hover { animation-play-state: paused; }
+
+/* Pulse CTA */
+@keyframes pulse-soft {
+  0%, 100% { box-shadow: 0 4px 16px hsl(24 100% 50% / 0.3); }
+  50%       { box-shadow: 0 8px 32px hsl(24 100% 50% / 0.5); }
+}
+.animate-pulse-soft { animation: pulse-soft 2.5s ease-in-out infinite; }
+.animate-pulse-soft:hover { animation: none; }
+
+/* Fade in up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
