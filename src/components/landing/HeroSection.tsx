@@ -33,8 +33,8 @@ const HeroSection = () => {
 
           {/* Sub */}
           <p className="text-base sm:text-xl text-white/60 max-w-xl mb-10 sm:mb-12 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.22s" }}>
-            A diferença entre clique e venda é visual. Transforme seus anúncios
-            em máquinas de conversão com imagens e clips estratégicos.
+            Imagens e clips estratégicos que transformam anúncios em
+            máquinas de conversão no Shopee, Mercado Livre e Amazon.
           </p>
 
           {/* CTAs */}

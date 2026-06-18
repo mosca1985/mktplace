@@ -37,8 +37,7 @@ const ProblemSection = () => {
             <span className="text-primary">todos os dias!</span>
           </h2>
           <p className="text-body">
-            Suas imagens não comunicam o valor do seu produto — e o cliente
-            compra do concorrente.
+            Imagem fraca = cliente no concorrente. Simples assim.
           </p>
         </div>
 

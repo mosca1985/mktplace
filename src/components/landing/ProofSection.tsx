@@ -38,7 +38,7 @@ const ProofSection = () => {
           <h2 className="heading-lg text-foreground mb-3 sm:mb-4">
             Resultados reais,<br /> <span className="text-primary">que vendem de verdade</span>
           </h2>
-          <p className="text-body">Cada imagem foi estrategicamente criada para converter cliques em vendas.</p>
+          <p className="text-body">Cada imagem criada para converter.</p>
         </div>
 
         {/* Mobile: Carousel with arrows */}
@@ -73,11 +73,8 @@ const ProofSection = () => {
 
         {/* Quote */}
         <p className="text-center mt-8 sm:mt-14 text-sm sm:text-base text-muted-foreground max-w-lg mx-auto px-5">
-          "\"Você não precisa de mais tráfego."
-          <br />
-          "Precisa de "
-          <strong className="text-foreground">mais conversão</strong>
-          ".\""
+          "Você não precisa de mais tráfego. Precisa de{" "}
+          <strong className="text-foreground">mais conversão</strong>."
         </p>
 
         {/* CTA to pricing */}

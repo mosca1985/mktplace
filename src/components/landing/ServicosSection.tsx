@@ -74,8 +74,7 @@ export const ServicosSection = () => {
 
               <div className="mt-6 pt-5 border-t border-border">
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Ideal para <strong className="text-foreground">Shopee, Mercado Livre e Amazon</strong>. 
-                  Cada imagem cumpre uma função específica dentro do anúncio.
+                  Para <strong className="text-foreground">Shopee, Mercado Livre e Amazon</strong>.
                 </p>
               </div>
             </div>
@@ -109,8 +108,7 @@ export const ServicosSection = () => {
 
               <div className="mt-6 pt-5 border-t border-border">
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  Perfeito para <strong className="text-foreground">Reels, TikTok e anúncios pagos</strong>. 
-                  Feito para parar o scroll nos primeiros 3 segundos.
+                  Para <strong className="text-foreground">Reels, TikTok e anúncios pagos</strong>. Para o scroll em 3s.
                 </p>
               </div>
             </div>

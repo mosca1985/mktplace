@@ -15,16 +15,13 @@ const ScaleSection = () => {
             Mais produtos,{" "}
             <span className="text-primary">mais economia!</span>
           </h2>
-          <p className="text-body">
-            Quanto maior o seu volume, maior o desconto. Pensado pra quem quer
-            crescer de verdade.
-          </p>
+          <p className="text-body">Volume maior, desconto maior.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto mb-8">
           {[
-            { icon: Package, pct: "-15%", label: "10+ produtos", desc: "Ideal para lojistas em crescimento" },
-            { icon: Rocket, pct: "-25%", label: "20+ produtos", desc: "Para quem opera em escala" },
+            { icon: Package, pct: "-15%", label: "10+ produtos", desc: "Lojistas em crescimento" },
+            { icon: Rocket, pct: "-25%", label: "20+ produtos", desc: "Operação em escala" },
           ].map((item, i) => (
             <div
               key={i}
