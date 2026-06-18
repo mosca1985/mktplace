@@ -6,28 +6,28 @@ const steps = [
     icon: ListOrdered,
     num: "01",
     title: "Escolha o pacote",
-    desc: "Use a calculadora acima para montar seu orçamento. Fotos, clips ou os dois — você define a quantidade e o preço cai automaticamente.",
+    desc: "Fotos, clips ou os dois. Defina a quantidade e veja o preço cair automaticamente.",
     accent: "bg-primary/10 text-primary",
   },
   {
     icon: CreditCard,
     num: "02",
     title: "Confirme o pagamento",
-    desc: "Pix com 10% de desconto ou cartão de crédito. Após a confirmação do pagamento, seu pedido entra oficialmente na fila.",
+    desc: "Pix (10% OFF) ou cartão. Confirmado o pagamento, entra na fila.",
     accent: "bg-primary/10 text-primary",
   },
   {
     icon: ListOrdered,
     num: "03",
     title: "Fila de produção",
-    desc: "Seu pedido entra na fila e você recebe a confirmação. A ordem de entrega é por ordem de chegada — primeiro a pagar, primeiro a receber.",
+    desc: "Primeiro a pagar, primeiro a receber. Você recebe a confirmação de entrada na fila.",
     accent: "bg-primary/10 text-primary",
   },
   {
     icon: Clock,
     num: "04",
     title: "Prazo de entrega",
-    desc: "A 1ª prova chega em até 9 dias úteis (não corridos) após a confirmação do pagamento. Você revisa e solicita ajustes se precisar.",
+    desc: "1ª prova em até 9 dias úteis após o pagamento. Revise e solicite ajustes.",
     accent: "bg-orange-100 text-orange-600",
     highlight: true,
   },
@@ -49,7 +49,7 @@ export const ProcessoSection = () => {
             <span className="text-primary">sem surpresas</span>
           </h2>
           <p className="text-white/50 text-base sm:text-lg leading-relaxed">
-            Processo simples, transparente e com prazo claro desde o início.
+            Simples, transparente e com prazo garantido.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export const ProcessoSection = () => {
                 Prazo garantido: <span className="text-primary">9 dias úteis</span>
               </p>
               <p className="text-white/50 text-sm leading-relaxed">
-                Contados a partir da confirmação do pagamento. <strong className="text-white/70">Dias úteis, não corridos.</strong> Você sabe exatamente quando vai receber a 1ª prova.
+                A partir da confirmação do pagamento. <strong className="text-white/70">Dias úteis, não corridos.</strong>
               </p>
             </div>
           </div>
